@@ -33,7 +33,8 @@ sudo apt-get install apache2-utils
 htpasswd -nb <username> <secure_password>
 ```
 
-`SERVER_IP` is used if you use [pi-hole](https://github.com/m1rkwood/traefik-docker)
+`SERVER_IP` is used if you use [pi-hole](https://github.com/m1rkwood/traefik-docker).  
+If you're using [Wireguard](https://github.com/m1rkwood/wireguard), use the Wireguard server IP here.
 
 ## acme.json
 
