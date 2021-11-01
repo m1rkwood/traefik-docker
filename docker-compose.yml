@@ -18,8 +18,8 @@ services:
       - "80:80"
       - "443:443"
       #
-      # pihole ports
-      # comment if you don't use pihole
+      # pihole/adguard ports
+      # comment if you don't use pihole/adguard
       # if using Wireguard, use wireguard server address as SERVER_IP
       # Using ${SERVER_IP} avoids using below commands
       # systemctl stop systemd-resolved.service
@@ -46,7 +46,7 @@ services:
       - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
       - "--entrypoints.websecure.address=:443"
       #
-      # pihole entrypoints
+      # pihole/adguard entrypoints
       # comment if you don't use pihole
       - "--entrypoints.dns.address=:53/tcp"
       - "--entrypoints.udpdns.address=:53/udp"
