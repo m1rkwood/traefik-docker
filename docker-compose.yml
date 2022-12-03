@@ -21,7 +21,8 @@ services:
       # pihole/adguard ports
       # comment if you don't use pihole/adguard
       # if using Wireguard, use wireguard server address as SERVER_IP
-      # Using ${SERVER_IP} avoids using below commands
+      # To find SERVER_IP, run ifconfig and look for wg0, look for inet address
+      # Using ${SERVER_IP} avoids using below commands (disabling linux DNS proxy system)
       # systemctl stop systemd-resolved.service
       # systemctl disable systemd-resolved.service
       - "${SERVER_IP}:53:53/tcp"
