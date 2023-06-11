@@ -33,7 +33,7 @@ services:
       - "--log.level=DEBUG"
       #
       # api (dashboard)
-      # disabled by default / uncomment this to activate + uncomment dashboard related labels below
+      # disabled by default / uncomment this to activate + uncomment entire labels section below
       # - "--api.dashboard=true"
       #
       # docker
@@ -62,11 +62,10 @@ services:
       # - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
       # uncomment to test your certs with staging
       #- "--certificatesresolvers.letsencrypt.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
-    labels:
+    # labels:
       #
       # traefik dashboard
-      # disabled by default / uncomment this to activat (including user:password generation)
-      # + uncomment dashboard related commands above
+      # disabled by default / uncomment entire labels section + uncomment dashboard related commands above
       # - "traefik.enable=true"
       # - "traefik.http.routers.api.rule=Host(`${TRAEFIK_HOST}`)"
       # - "traefik.http.routers.api.service=api@internal"
